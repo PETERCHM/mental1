@@ -1,0 +1,150 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health Support Network</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}"></head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+        <img src="{% static 'images/logo1.png' %}" alt="Mental Health Support Network Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Forums</a></li>
+        <li><a href="#">Signup</a></li>
+        <li><a href="#">Donate</a></li>
+
+        <!-- Add other menu items here -->
+      </ul>
+    </nav>
+    <div class="user-access">
+      <!-- Add login/register buttons or user profile links here -->
+    </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Our Support Network</h1>
+      <p>Your Path to Better Mental Health Begins Here</p>
+      <a href="#" class="cta-button">Get Support</a>
+    </div>
+  </section>
+  <!-- Featured Content Section -->
+  <section class="featured-content">
+    <h2>Featured Content</h2>
+    <div class="content-item">
+        <img src="{% static 'images/featured.jpg' %}" alt="featured image">    
+        <h3>Understanding Stress</h3>
+      <p>Learn how to manage and reduce stress in your daily life.</p>
+      <a href="https://www.mentalhealth.org.uk/explore-mental-health/publications/how-manage-and-reduce-stress">Read More</a>
+    </div>
+    <!-- Add more content items here -->
+    <div class="content-item">
+        <img src="{% static 'images/ways.png' %}" alt="featured image"> 
+        <h3>Coping Strategies</h3>
+      <p>Watch our video on effective coping strategies for stress and anxiety.</p>
+      <a href="https://youtu.be/YoSuVws4OTQ?si=UvLqbNmDOOYfSbbv">Watch Now</a>
+    </div>
+    <!-- Add more content items here -->
+  </section>
+  <!-- About Us Section -->
+  <section class="about-us">
+    <div class="about-content">
+      <h2>About Us</h2>
+      <p>We are dedicated to providing a safe and supportive space for individuals seeking mental health and well-being support. Our mission is to make a positive impact on the lives of our users by offering a wide range of resources, peer support, and professional counseling services.</p>
+      <h3>Meet Our Team</h3>
+      <div class="team-member">
+        <img src="{% static 'images/featured.jpg' %}" alt="featured image">    
+        <h4>John Doe</h4>
+        <p>Co-Founder and CEO</p>
+      </div>
+      <!-- Add more team members here -->
+    </div>
+  </section>
+  <!-- Key Features Section -->
+  <section class="key-features">
+    <h2>Key Features</h2>
+    <div class="feature">
+        <img src="{% static 'images/roles.png' %}" alt="featured image">    
+      <h3>Forums and Support Groups</h3>
+      <p>Engage with others in our supportive community through topic-based forums and peer support groups.</p>
+    </div>
+    <!-- Add more features here -->
+    <div class="feature">
+        <img src="{% static 'images/clinicians.png' %}" alt="featured image">    
+      <h3>Professional Counseling</h3>
+      <p>Access private and secure video counseling sessions with licensed professionals.</p>
+    </div>
+    <!-- Add more features here -->
+  </section>
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="testimonial">
+        <img src="{% static 'images/user1.jpeg' %}" alt="featured image">       
+         <p>"This platform has been a lifeline for me. I found incredible support and guidance when I needed it the most."</p>
+      <p class="user-name">JOHN A.</p>
+    </div>
+    <!-- Add more testimonials here -->
+    <div class="testimonial">
+     <img src="{% static 'images/user2.jpeg' %}" alt="featured image">      
+       <p>"The resources and counseling available here are outstanding. I'm truly grateful for this community."</p>
+      <p class="user-name">SARAH B.</p>
+    </div>
+    <!-- Add more testimonials here -->
+  </section>
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>Email: support@yourwebsite.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+        <p>Address: 123 Main St, City, Country</p>
+      </div>
+      <div class "quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <h3>Connect With Us</h3>
+        <a href="#" class="social-icon">Facebook</a>
+        <a href="#" class="social-icon">Twitter</a>
+        <a href="#" class="social-icon">Instagram</a>
+      </div>
+      {% comment %} <div class="newsletter">
+        <h2>Stay Informed</h2>
+        <p>Subscribe to our newsletter to receive the latest updates, tips, and resources related to mental health and well-being.</p>
+    </div>
+      <div class="subscribe-form">
+        <input type="email" placeholder="Enter your email">
+        <button type="submit">Subscribe</button>
+      </div> {% endcomment %}
+    </div>
+  </footer>
+  <!-- Bottom Navigation Section -->
+  <section class="bottom-navigation">
+    <ul>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Support</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <!-- Add more links as needed -->
+    </ul>
+    <section class="bottom-navigation">
+        <p>&copy; 2023 Mental Health. All rights Reserved</p>
+  </section>
+  </section>
+</body>
+</html>
