@@ -1,11 +1,9 @@
-/* Reset default margin and padding for all elements */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Set a background color for the entire page */
 body {
   background-color: #3ea365;
   font-family: Arial, sans-serif;
@@ -39,11 +37,28 @@ nav a {
   color: #fff;
 }
 
+.user-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00bcd4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.user-button:hover {
+  background-color: #4ddcf5;
+}
+
+
 /* Hero section styles */
 .hero {
-  /* background-image: url('hero-background.jpg'); */
+  background-color: #26884c;
   background-size: cover;
-  color: #fff;
+  color: #f7faf8;
   text-align: center;
   padding: 100px 0;
   line-height: 2;
@@ -56,12 +71,12 @@ nav a {
 
 .hero p {
   font-size: 18px;
-  margin-bottom: 40px; /* Double spacing */
+  margin-bottom: 40px;
 }
 
 .cta-button {
   display: inline-block;
-  background-color: #0d62d1;
+  background-color: #0daad1;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -70,7 +85,7 @@ nav a {
 }
 
 .cta-button:hover {
-  background-color: #c50909;
+  background-color: #58f5f5;
 }
 
 /* Featured Content section styles */
@@ -82,7 +97,7 @@ nav a {
 }
 
 .content-item {
-  margin-bottom: 40px; /* Double spacing */
+  margin-bottom: 40px;
 }
 
 .content-item img {
@@ -115,7 +130,7 @@ nav a {
 }
 
 .feature {
-  margin-bottom: 40px; /* Double spacing */
+  margin-bottom: 40px; 
 }
 
 .feature img {
@@ -160,17 +175,17 @@ footer {
 
 .contact-info {
   flex: 3;
-  margin-right: 20px; /* Increased margin for spacing */
+  margin-right: 20px;
 }
 
 .quick-links {
   flex: 3;
-  margin-right: 30px; /* Margin for spacing between Quick Links and Social Media */
+  margin-right: 30px;
 }
 
 .social-media {
   flex: 3;
-  margin-left: 200px; /* No margin to separate Social Media from the next element */
+  margin-left: 200px;
 }
 
 .quick-links ul {
@@ -178,7 +193,7 @@ footer {
 }
 
 .quick-links li {
-  margin-bottom: 30px; /* Double spacing */
+  margin-bottom: 30px;
 }
 
 .social-icon {
@@ -216,3 +231,261 @@ footer {
 .bottom-navigation a:hover {
   text-decoration: underline;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  display: flex;
+  width: 100%; /* Full-width container */
+  height: 100vh; /* Full-height container */
+  background-color: #41996d;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 100%; /* Adjust the max width as needed */
+  line-height: 2;
+}
+
+.left-pane {
+  flex: 2;
+}
+
+.right-pane {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+form {
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Sign Up and Sign In button styles */
+button {
+  background-color: #1d6432;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #a80016;
+}
+
+a {
+  text-decoration: none;
+  color: #d40035;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Change color for "Forgot password?" link */
+a.forgot-password {
+  color: red;
+}
+/* Registration form styles */
+.register-container {
+  display: flex; /* Use flex to create left and right panes */
+  background-color: #41996d;
+  border: 1px solid #e0a8a8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%; /* Full width */
+  text-align: center;
+  height: 100vh;
+}
+
+/* Right column styles for the registration form */
+.right-pane {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.right-pane h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Additional styling for the registration form fields */
+.right-pane input[type="text"],
+.right-pane input[type="email"],
+.right-pane input[type="password"],
+.right-pane input[type="tel"] {
+  width: 90%;
+  padding: 3px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border: 1px solid #fdfcfc;
+  border-radius: 5px;
+}
+
+/* Sign Up button styles */
+.right-pane button {
+  background-color: #0c50cf;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.right-pane button:hover {
+  background-color: #a8002a;
+}
+
+/* Link styles for "Already have an account? Login" */
+.right-pane a {
+  text-decoration: none;
+  color: #1e6bdf;
+  font-weight: bold;
+}
+
+.right-pane a:hover {
+  text-decoration: underline;
+}
+
+/* Left column styles for the image */
+.left-pane {
+  flex: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a background color for the entire page */
+body {
+  background-color: #4c966b;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  background-color: #37474f;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Main content styles */
+main {
+  display: flex;
+  padding: 20px;
+}
+
+.categories {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.categories h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.categories ul {
+  list-style: none;
+}
+
+.categories li {
+  margin-bottom: 10px;
+}
+
+.categories a {
+  text-decoration: none;
+  color: #00bcd4;
+  font-weight: bold;
+}
+
+.categories a:hover {
+  text-decoration: underline;
+}
+
+.threads {
+  flex: 2;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.threads h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.thread {
+  margin-bottom: 20px;
+}
+
+.thread h3 {
+  font-size: 20px;
+}
+
+.thread p {
+  color: #777;
+}
+

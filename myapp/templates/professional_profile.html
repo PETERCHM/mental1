@@ -1,0 +1,31 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Profile</title>
+    <link rel="stylesheet" href="{% static 'css/professional.css' %}">
+    <link rel="icon" type=" image/x-icon" href="{% static 'images/favicon.ico' %}">
+
+
+</head>
+<body>
+    <div class="container">
+        <h2>Professional Profile</h2>
+        <img src="{{ professional.profile_picture.url }}" alt="Profile Picture">
+        <h3>{{ professional.first_name }} {{ professional.last_name }}</h3>
+        <p>Profession: {{ professional.profession }}</p>
+        <p>Email: {{ professional.email }}</p>
+        <p>Phone: {{ professional.phone }}</p>
+        <p>Location: {{ professional.location }}</p>
+        <p>Specialties: {{ professional.specialties }}</p>
+        <p>Experience: {{ professional.experience }} years</p>
+        <p>Education: {{ professional.education }}</p>
+        <p>License: {{ professional.license }}</p>
+        <p>Description: {{ professional.description }}</p>
+        <!-- Add more fields as needed -->
+      </div>
+    <a href="{% url 'create_professional' %}">Edit Profile</a>
+</body>
+</html>

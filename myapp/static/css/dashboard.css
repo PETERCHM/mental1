@@ -1,0 +1,106 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color for the entire page */
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Dashboard Page styles */
+.dashboard-page {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+/* Left Pane (Navigation Sidebar) styles */
+.left-pane {
+    width: 250px;
+    background-color: #37474f;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 100%; /* Set the height to 100% */
+}
+
+/* ... (the rest of the CSS remains the same) */
+
+.logo img {
+    max-width: 100px;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {
+    margin-bottom: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+/* Apply hover styles to navigation links */
+.nav-sidebar a:hover {
+    background-color: #fa1108; /* Background color when hovering */
+    color: #fff; /* Text color when hovering */
+    text-decoration: underline; /* Add underline when hovering */
+    transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+}
+
+/* Right Pane (Main Content Area) styles */
+.right-pane {
+    flex: 1;
+    padding: 20px;
+}
+/* Header styles */
+header {
+    background-color: #37474f;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Search Tab styles */
+.search-tab {
+    display: flex;
+    align-items: center;
+}
+
+.search-tab h3 {
+    font-size: 20px;
+    margin-right: 20px;
+    color: #fff;
+}
+
+#search-input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#search-button {
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #0088a8;
+}

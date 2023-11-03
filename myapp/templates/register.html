@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register page</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+</head>
+<body>
+    <div class="register-container">
+        <div class="left-pane">
+            <!-- Image on the left -->
+            <img src="{% static 'images/featured.jpg' %}" alt="Login Image">
+            <p>Welcome to our mental health and well-being support network. We are here to provide you with the help and resources you need to maintain good mental health and find support from a community that cares.</p>
+          </div>
+        <div class="right-pane">
+            <h2>Create an Account</h2>
+            <form action="register_handler_url" method="post">
+                <!-- First Name Field -->
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first_name" placeholder="peter" required>
+
+                <!-- Last Name Field -->
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last_name" placeholder="Bless" required>
+
+                <!-- Phone Number Field -->
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" id="phone-number" name="phone_number" placeholder="07XX XXX XXX" required>
+
+                <!-- Email Field -->
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+                <!-- ID Number Field -->
+                <label for="id-number">ID Number</label>
+                <input type="text" id="id-number" name="id_number" placeholder="eg, 12345678" required>
+
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="eg, Peterdev" required>
+                
+                <!-- Password Field -->
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="must be atleast 8 characters" required>
+
+                <!-- Confirm Password Field -->
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm_password" placeholder="repeat the password Here" required>
+
+                <!-- Sign Up Button -->
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+  <script src="{% static 'js/scripts.js' %}"></script>
+  <!-- Add more links for your CSS and JavaScript files as needed -->
+</head>
+<body>
+  <div class="dashboard-page">
+    <div class="left-pane">
+      <!-- Navigation sidebar (left side) -->
+      <div class="nav-sidebar">
+        <div class="logo">
+          <img src="{% static 'images/logo1.png' %}" alt="Your Logo">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">My Profile</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Announcements</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Logout</a></li>
+            <li><a href="#">My counselors</a></li>
+            <li><a href="#">Active sessions</a></li>
+            <li><a href="#">My Forums</a></li>
+            <li><a href="#">Peers</a></li>
+            <li><a href="#">create a Forum</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Documentations</a></li>
+
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Main content area (right side) -->
+    <div class="right-pane">
+        <header>
+            <!-- Add your header content here -->
+            <div class="search-tab">
+                <h3>Search</h3>
+                <input type="text" id="search-input" placeholder="Search...">
+                <button id="search-button">Search</button>
+            </div>
+        </header>
+
+      
+      <div class="calendar">
+
+      </div>
+
+
+      <!-- Recent Activity -->
+      <div class="dashboard-segment recent-activity">
+        <!-- Recent activity content here -->
+      </div>
+
+      <!-- User Statistics -->
+      <div class="dashboard-segment user-statistics">
+        <!-- User statistics content here -->
+      </div>
+
+      <!-- Recent Posts -->
+      <div class="recent-posts">
+        <!-- Recent posts content here -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>

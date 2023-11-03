@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mental Health Support Network</title>
+  <title>Form Ni Maisha Bila Depression</title>
   <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-  <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}"></head>
+  <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+</head>
 <body>
   <!-- Header Section -->
   <header>
@@ -15,24 +16,27 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Forums</a></li>
-        <li><a href="#">Signup</a></li>
-        <li><a href="#">Donate</a></li>
+        <li><a href="create_mental_health_profile">seeking Support? Signup</a></li>
+        <li><a href="forums">Forums</a></li>
+        <li><a href="create_professional">Signup as Profession</a></li>
+        <li><a href="dashboard">Dashboard</a></li>
 
         <!-- Add other menu items here -->
       </ul>
     </nav>
     <div class="user-access">
-      <!-- Add login/register buttons or user profile links here -->
+      <a href="/login" class="user-button">Login</a>
+      <a href="/register" class="user-button">Register</a>
+      <a href="#" class="user-button">Invite a Friend</a>
     </div>
+    
   </header>
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
       <h1>Welcome to Our Support Network</h1>
       <p>Your Path to Better Mental Health Begins Here</p>
-      <a href="#" class="cta-button">Get Support</a>
+      <a href="login" class="cta-button">Get Support</a>
     </div>
   </section>
   <!-- Featured Content Section -->
@@ -79,8 +83,7 @@
     <div class="feature">
         <img src="{% static 'images/clinicians.png' %}" alt="featured image">    
       <h3>Professional Counseling</h3>
-      <p>Access private and secure video counseling sessions with licensed professionals.</p>
-    </div>
+` ````
     <!-- Add more features here -->
   </section>
   <!-- Testimonials Section -->
